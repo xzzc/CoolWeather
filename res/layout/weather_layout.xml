@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="50dp"
+			android:background="#484E61" >
+		<Button
+			android:id="@+id/button_home"
+			android:layout_width="30dp"
+			android:layout_height="30dp"
+			android:layout_centerVertical="true"
+			android:layout_marginLeft="10dp"
+			android:background="@drawable/home"/>"
+		<TextView
+			android:id="@+id/city_name"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerInParent="true"
+			android:textColor="#fff"
+			android:textSize="24sp" />
+		<Button
+			android:id="@+id/button_refresh"
+			android:layout_width="30dp"
+			android:layout_height="30dp"
+			android:layout_centerVertical="true"
+			android:layout_marginRight="10dp"
+			android:layout_alignParentRight="true"
+			android:background="@drawable/refresh" />
+	</RelativeLayout>
+
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#37A5F9">
+        <TextView
+            android:id="@+id/textview_publish_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#f00"
+            android:textSize="24sp"
+            android:text="12"/>
+        
+        <LinearLayout 
+            android:id="@+id/weather_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:layout_marginTop="100dp">
+            
+            <TextView 
+                android:id="@+id/textview_current_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="#fff"
+                android:textSize="24sp"
+                android:text="123"/>
+            
+            <TextView 
+                android:id="@+id/textview_weather_desp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="#fff"
+                android:textSize="46sp"
+                android:text="123"/>
+
+             
+             <LinearLayout
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:orientation="horizontal"
+	            android:layout_gravity="center">
+                 <TextView 
+	                android:id="@+id/textview_temp1"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_gravity="center"
+	                android:textColor="#fff"
+	                android:textSize="35sp"/>
+                 
+                 <TextView
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_gravity="center"
+	                android:textColor="#fff"
+	                android:textSize="35sp"
+	                android:text="@string/n1"/>"
+                 
+                 <TextView 
+	                android:id="@+id/textview_temp2"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_gravity="center"
+	                android:textColor="#fff"
+	                android:textSize="35sp"/>
+             </LinearLayout>
+             
+             <LinearLayout 
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal">"
+             </LinearLayout>
+             
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
