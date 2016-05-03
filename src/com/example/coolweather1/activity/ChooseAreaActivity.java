@@ -13,7 +13,6 @@ import com.example.coolweather1.util.HttpCallbackListener;
 import com.example.coolweather1.util.HttpUtil;
 import com.example.coolweather1.util.Utility;
 
-import android.R.bool;
 import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Intent;

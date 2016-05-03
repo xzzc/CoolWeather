@@ -1,6 +1,7 @@
 package com.example.coolweather1.activity;
 
 import com.example.coolweather1.R;
+import com.example.coolweather1.receiver.AutoUpdateReceiver;
 import com.example.coolweather1.util.HttpCallbackListener;
 import com.example.coolweather1.util.HttpUtil;
 import com.example.coolweather1.util.Utility;
@@ -16,7 +17,6 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.Window;
 import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -173,5 +173,7 @@ public class WeatherActivity extends Activity implements OnClickListener{
 		currentDateText.setText(preferences.getString("current_data", ""));
 		weatherInfoLayout.setVisibility(View.VISIBLE);
 		cityNameText.setVisibility(View.VISIBLE);
-	}
+		Intent intent = new Intent(this, AutoUpdateReceiver.class);
+		startService(intent);
+	}	
 }
